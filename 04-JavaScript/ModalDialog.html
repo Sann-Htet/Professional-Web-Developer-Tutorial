@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Modal Dialog</title>
+</head>
+<body>
+    <h1>This is my awesome website!</h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore necessitatibus at reprehenderit neque aspernatur! Modi vitae vel voluptatum nisi. 
+        Dolore magni ipsa incidunt assumenda dignissimos vel dolorum in, labore perferendis?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit, cum eos et unde beatae?
+        Saepe, vero, inventore quae fuga consequatur repellendus ipsam reiciendis illum suscipit facere laudantium aut debitis.
+    </p>
+
+    <button onClick="showDialog()">Contact Me?</button>
+
+    <!-- Dialog -->
+    <div id="overlay" onClick="hideDialog()"></div>
+    <div id="dialog">
+        <h2>Contact Me? <span onClick="hideDialog()">&times;</span></h2>
+
+        <form>
+            <input type="text" placeholder="Your email">
+            <textarea placeholder="Your message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <script>
+        function showDialog() {
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("dialog").style.display = "block";
+        }
+
+        function hideDialog() {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("dialog").style.display = "none";
+        }
+    </script>
+</body>
+</html>
