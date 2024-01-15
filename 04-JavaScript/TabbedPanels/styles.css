@@ -10,3 +10,26 @@ body {
     background: #c22;
     overflow: hidden;
 }
+
+.tab-bar li {
+    padding: 8px 20px;
+    float: left;
+    margin-right: 8px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.panel {
+    min-height: 200px;
+    border: 1px solid #c22;
+    border-top: 0 none;
+    padding: 15px;
+}
+
+#tab-2 {
+    background: #e55;
+}
+
+#panel-2 {
+    display: none;
+}
